@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #2E3A59;
+    --accent-color: #F5A9A9;
+    --background-color: #F4F4F4;
+    --text-color: #333333;
+    --button-color: #66BB6A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Big Shoulders', arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+header {
+    grid-area: header;
+    background-color: var(--secondary-color);
+
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 25px 0 0 25px;
+}
+
+nav {
+    display: flex;
+    background-color: black; 
+    padding: 25px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+    text-decoration: underline;
+    color: var(--accent-color)
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 2000px;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: var(--background-color);
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px var(--secondary-color);
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--primary-color);
+}
+
+#lastModified{
+    color: var(--accent-color)
+}
+
+footer #currentyear {
+    font-weight: bold;
+}
+
+/* Button Style */
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darken(var(--button-color), 10%);
+}
+
+.aboutarea {
+    display: flex;
+    align-items: center;
+}
+
+#mypicture {
+    max-width: 150px;
+    height: auto;
+}
+
+
+#flag {
+    max-width: 250px;
+    height: auto;
+    order: 1;
+}
