@@ -37,6 +37,10 @@ header h1 {
     padding: 25px 0 0 25px;
 }
 
+h2, h3 {
+    border-bottom: 1px solid var(--primary-color)
+}
+
 nav {
     display: flex;
     background-color: black; 
@@ -96,21 +100,6 @@ footer #currentyear {
     font-weight: bold;
 }
 
-/* Button Style */
-button {
-    background-color: var(--button-color);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: darken(var(--button-color), 10%);
-}
-
 .aboutarea {
     display: flex;
     align-items: center;
@@ -126,4 +115,14 @@ button:hover {
     max-width: 250px;
     height: auto;
     order: 1;
+}
+
+ul {
+    margin-top: 25px;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+li {
+    margin-bottom: 10px;
 }
