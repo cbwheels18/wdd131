@@ -7,7 +7,7 @@ header, main, footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: aqua;
+    background-color: aquamarine;
 }
 
 main {
@@ -18,7 +18,7 @@ main {
 
 section {
     padding: 25px;
-    background-color: bisque;
+    background-color: white;
     color: black;
 }
 
