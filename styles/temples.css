@@ -74,18 +74,16 @@ main {
     margin: 0 auto;
 }
 
-/* Container for the figure elements with CSS Grid */
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
     margin: 20px auto; 
     place-items: center;
-    width: 100%; /* Ensure container is full width */
-    max-width: 1000px; /* Optional: Limit max width */
+    width: 100%; 
+    max-width: 1000px;
 }
 
-/* Styling for each figure element */
 figure {
     display: flex;
     flex-direction: column; 
