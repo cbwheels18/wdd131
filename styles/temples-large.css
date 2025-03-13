@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+    header {
+        
+        color: black;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: var(--secondary-color);
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block; 
+        background: none;
+        border: none;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+}
