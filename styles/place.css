@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #2E3A59;
+    --accent-color: #F5A9A9;
+    --background-color: #F4F4F4;
+    --text-color: #333333;
+    --button-color: #66BB6A;
+    --nz-green: #2C9D44; 
+    --nz-blue: #004489; 
+    --nz-red: #dc002e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    text-align: center;
+    background-color: var(--nz-blue);
+    border-bottom: 10px solid var(--nz-red);
+    color: white;
+    padding: 25px;
+    font-size: 3.5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    margin-bottom: 0;
+}
+
+#hero img {
+    object-fit: cover;
+    object-position: center; 
+    width: 100%;
+    height: auto;
+}
+
+#hero-content {
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#data {
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    padding: 20px;
+    background-color: rgba(230, 216, 216, 0.8);
+    color: black;
+    border-radius: 10px;
+    padding-top: 5rem;
+}
+
+#data h2 {
+    position: absolute;
+    top: 1rem;
+    left: -1rem;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(27, 25, 25);
+    border-radius: 10px;
+    color: white;
+}
+
+#weather {
+    position: absolute;
+    bottom: 10.5rem;
+    right: 10rem;
+    padding: 20px;
+    background-color: rgba(35, 32, 32, 0.8);
+    color: white;
+    border-radius: 10px;
+    padding-top: 5rem;
+}
+
+#weather h2 {
+    position: absolute;
+    bottom: 10.5rem;
+    left: -1rem;
+    color: black;
+    padding: 10px 25px 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h2 #weather-icon::before {
+    content: "⛅";
+}
+
+#weather-icon svg, #data-icon svg {
+    display: none;
+}
+
+h2 #data-icon::before {
+    content: "📊";
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+dl dt, dl dd {
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--nz-blue);
+    border-top: 2px solid var(--accent-color);
+    color: white;
+    padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    #hero-content {
+        position: static;
+        display: block;
+    }
+
+    #data, #weather {
+        position: static;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+    }
+    
+    #data h2, #weather h2 {
+        position: static;
+        background-color: rgba(17, 16, 16, 0.8);
+        margin: 0;
+        padding: 0;
+        text-align: center;;
+        border-radius: 10px;
+        color: white;
+    }
+
+    h2 #weather-icon::before, h2 #data-icon::before {
+        display: none;
+    }
+
+    #weather-icon svg, #data-icon svg {
+        display: inline-block;
+    }
+
+    dl dt, dl dd {
+        margin-bottom: 1rem;
+    }
+}
