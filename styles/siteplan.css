@@ -121,7 +121,7 @@ footer {
 }
 
 #lastModified {
-    color: var(--primary-color);
+    color: rgb(255, 0, 247);
 }
 
 footer #currentyear {
