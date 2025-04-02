@@ -92,6 +92,7 @@ main {
 
 fieldset {
     border: none;
+    padding-bottom: 10px;
 }
 
 label.rating {
