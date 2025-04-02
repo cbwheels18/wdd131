@@ -31,21 +31,22 @@
                         <option value="" disabled selected>Select a Product...</option>
                     </select>
                 </label>
-                <label>Overall Rating *
-                    <div class="rating">
-                        <label for="rating1">★</label>
-                        <input type="radio" name="rating" id="rating1" required>
-                        <label for="rating2">★★</label>
-                        <input type="radio" name="rating" id="rating2" required>
-                        <label for="rating3">★★★</label>
-                        <input type="radio" name="rating" id="rating3" required>
-                        <label for="rating4">★★★★</label>
-                        <input type="radio" name="rating" id="rating4" required>
-                        <label for="rating5">★★★★★</label>
-                        <input type="radio" name="rating" id="rating5" required>
-                    </div>
-                </label>
-                
+                <label for="rating1">Overall Rating *</label>
+                <label for="rating2">★</label>
+                <input type="radio" name="rating" id="rating1" required>
+
+                <label for="rating2">★★</label>
+                <input type="radio" name="rating" id="rating2" required>
+
+                <label for="rating3">★★★</label>
+                <input type="radio" name="rating" id="rating3" required>
+
+                <label for="rating4">★★★★</label>
+                <input type="radio" name="rating" id="rating4" required>
+
+                <label for="rating5">★★★★★</label>
+                <input type="radio" name="rating" id="rating5" required>
+              
                 <label>Date of Installation *
                     <input type="date" name="date" id="date" required>
                 </label>
@@ -60,7 +61,7 @@
                 <label>
                     <label>Your Name (Optional) <input type="text" id="uname" name="uname"> </label>
                 </label>
-                <label><input type="submit" name="submit" id="submit" value="Send Review"></label>
+                <input type="submit" name="submit" id="submit" value="Send Review">
                 <p>* denotes required fields</p>
            </form>
         </div>
@@ -68,7 +69,6 @@
     <footer>
         <p>&copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah, USA</p>
         <p id="lastModified"></p>
-        <p id="review-count">Number of reviews completed: 0</p>
     </footer>
 </body>
 </html>

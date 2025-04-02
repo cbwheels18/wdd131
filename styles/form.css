@@ -90,6 +90,21 @@ main {
     margin-top: 20px;
 }
 
+label.rating {
+    display: block;
+    line-height: 1.6; 
+}
+
+label.rating input {
+    display: block;
+    margin-bottom: 5px; 
+}
+
+label.rating span {
+    display: block;
+    margin-bottom: 5px;
+}
+
 h2 {
     font-family: 'Big Shoulders', Arial, sans-serif;
     text-align: center;
@@ -144,7 +159,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background-color: var(--button-color);
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -154,7 +169,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(53, 126, 53);
 }
 
 footer {
@@ -180,7 +195,7 @@ footer select {
 }
 
 #lastModified {
-    color: rgb(255, 0, 247);
+    color: rgb(56, 54, 56);
 }
 
 footer #currentyear {
