@@ -90,6 +90,10 @@ main {
     margin-top: 20px;
 }
 
+fieldset {
+    border: none;
+}
+
 label.rating {
     display: block;
     line-height: 1.6; 
