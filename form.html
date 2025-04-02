@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Cody Wheeler - Form for WDD 131">
+    <meta name="author" content="Cody Wheeler">
+    <link rel="stylesheet" href="../styles/form.css">
+    <script src="../scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        <nav>
+            <button class="hamburger" id="hamburger-btn">&#9776;</button>
+            <div class="nav-links" id="nav-links">
+                <a href="form.html" id="home">Home</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+           <form method="get" action="review.html"> 
+                <h2>Product Review Form</h2> 
+                <label>Product Name *
+                    <select id="product-name" name="pname" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+                <label>Overall Rating *
+                    <div class="rating">
+                        <label for="rating1">★</label>
+                        <input type="radio" name="rating" id="rating1" required>
+                        <label for="rating2">★★</label>
+                        <input type="radio" name="rating" id="rating2" required>
+                        <label for="rating3">★★★</label>
+                        <input type="radio" name="rating" id="rating3" required>
+                        <label for="rating4">★★★★</label>
+                        <input type="radio" name="rating" id="rating4" required>
+                        <label for="rating5">★★★★★</label>
+                        <input type="radio" name="rating" id="rating5" required>
+                    </div>
+                </label>
+                
+                <label>Date of Installation *
+                    <input type="date" name="date" id="date" required>
+                </label>
+                <label>Useful Features
+                    <label><input type="checkbox" name="strength" id="strength" value="yes">Strength</label>
+                    <label><input type="checkbox" name="design" id="design" value="yes">Design</label>
+                    <label><input type="checkbox" name="performance" id="performance" value="yes">Performance</label>
+                </label>
+                <label>Written Review (Optional)
+                    <textarea name="review" id="review"></textarea>
+                </label>
+                <label>
+                    <label>Your Name (Optional) <input type="text" id="uname" name="uname"> </label>
+                </label>
+                <label><input type="submit" name="submit" id="submit" value="Send Review"></label>
+                <p>* denotes required fields</p>
+           </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah, USA</p>
+        <p id="lastModified"></p>
+        <p id="review-count">Number of reviews completed: 0</p>
+    </footer>
+</body>
+</html>
