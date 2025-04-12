@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waterfall Hikes - Nature Waterfall Hikes</title>
+    <meta name="description" content="Discover beautiful waterfall hikes in Utah - filter by difficulty, location, and duration">
+    <meta name="author" content="Cody Wheeler">
+    <link rel="stylesheet" href="../styles/project.css">
+    <script src="../scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/nwhlogonowords.png" alt="Nature Waterfall Hikes Logo" class="logo-image">
+            <a href="index.html">NatureWaterfallHikes</a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hikes.html" class="active">Hikes</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <h1>Discover Beautiful Waterfall Hikes</h1>
+            <p>Explore Utah's most beautiful waterfall hikes. Use the filters below to find the perfect hike for your adventure.</p>
+        </section>
+
+        <section class="filter-section">
+            <h2>Filter Hikes</h2>
+            <div class="filter-container">
+                <div class="filter-group">
+                    <h3>Difficulty</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="difficulty" value="easy" class="filter-checkbox"> 
+                            <span class="checkbox-label">Easy</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="difficulty" value="moderate" class="filter-checkbox"> 
+                            <span class="checkbox-label">Moderate</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="difficulty" value="difficult" class="filter-checkbox"> 
+                            <span class="checkbox-label">Difficult</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Location</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="location" value="northern" class="filter-checkbox"> 
+                            <span class="checkbox-label">Northern Utah</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="location" value="central" class="filter-checkbox"> 
+                            <span class="checkbox-label">Central Utah</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="location" value="southern" class="filter-checkbox"> 
+                            <span class="checkbox-label">Southern Utah</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>Duration</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="duration" value="short" class="filter-checkbox"> 
+                            <span class="checkbox-label">Short (< 2 hours)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="duration" value="medium" class="filter-checkbox"> 
+                            <span class="checkbox-label">Medium (2-4 hours)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="duration" value="long" class="filter-checkbox"> 
+                            <span class="checkbox-label">Long (> 4 hours)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-actions">
+                <button id="apply-filters" class="cta-button">Apply Filters</button>
+                <button id="reset-filters" class="reset-button">Reset Filters</button>
+            </div>
+        </section>
+
+        <section class="hikes-results">
+            <h2>Matching Hikes <span id="results-count">(Showing all hikes)</span></h2>
+            <div id="hikes-container" class="hikes-container">
+                <!-- Hikes will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <p>Sign up for our newsletter to receive updates and helpful tips to make your next waterfall hike a success.</p>
+            
+            <form class="contact-form">
+                <input type="email" placeholder="Email address..." required>
+                <input type="text" placeholder="Full name..." required>
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

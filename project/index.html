@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Waterfall Hikes</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Cody Wheeler - Nature Waterfall Hikes">
+    <meta name="author" content="Cody Wheeler">
+    <link rel="stylesheet" href="../styles/project.css">
+    <script src="../scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/nwhlogonowords.png" alt="Nature Waterfall Hikes Logo" class="logo-image">
+            <a href="index.html">NatureWaterfallHikes</a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="hikes.html">Hikes</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Skip the boring trails — chase the ones with a view!</h1>
+                <p>EXPLORE BEAUTIFUL WATERFALLS</p>
+                <a href="hikes.html"><button class="learn-more">Explore Hikes</button></a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img src="../images/location-icon.svg" alt="Location icon" class="feature-icon">
+                </div>
+                <h3>Hike location</h3>
+                <p>Find a beautiful hike at a location that is just right for you, maybe it is an area you haven't explored before. Or even an area you have but just looking to explore more!</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img src="../images/duration-icon.svg" alt="Duration icon" class="feature-icon">
+                </div>
+                <h3>How long to the finish line?</h3>
+                <p>If you are looking for a quick hike or a longer hike to enjoy and take in the views along the way, you can find it here.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img src="../images/difficulty-icon.svg" alt="Difficulty icon" class="feature-icon">
+                </div>
+                <h3>How difficult is the hike?</h3>
+                <p>Are you an adventure seeker? Looking for the next thrill, whether it be a tough or an easy hike, you are looking for a new adventure to take part in, you are in the right place.</p>
+            </div>
+        </section>
+
+        <section class="nature-info">
+            <div class="nature-text">
+                <h2>Beautiful nature</h2>
+                <p>Utah is the perfect state where you can enjoy the magical splendor and beauty of nature, including an extraordinary collection of diverse landscapes.</p>
+                <p>There are magnificent mountains, fascinating deserts, spectacular rock formations, colorful canyons, majestic lakes and beautiful rivers.</p>
+                <p>We provide incredible hiking opportunities for all skill levels. Whichever type of adventure you want, you'll find the perfect fit here.</p>
+            </div>
+            <div class="nature-image">
+                <img src="../images/naturewaterfall.jpg" alt="Beautiful nature landscape">
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <p>Sign up for our newsletter to receive updates and helpful tips to make your next waterfall hike a success and forget the stress of not having a good vacation plan or appropriate hiking suggestions.</p>
+            
+            <form class="contact-form">
+                <input type="email" placeholder="Email address..." required>
+                <input type="text" placeholder="Full name..." required>
+                <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> &bull; Cody Wheeler &bull; Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
