@@ -139,19 +139,18 @@ nav {
 }
 
 .learn-more {
-    background-color: var(--button-color);
-    color: white;
+    display: inline-block;
     padding: 10px 20px;
-    border: none;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .learn-more:hover {
-    background-color: var(--accent-color);
+    color: white;
     transform: translateY(-2px);
 }
 
@@ -341,7 +340,7 @@ footer p {
     justify-content: flex-end;
     align-items: center;
     font-size: 0.9rem;
-    color: #777;
+    color: black;
     margin: 25px;
     height: 100%;
 }
@@ -369,6 +368,7 @@ footer p {
 
 .star {
     font-size: 1.2rem;
+    color: black;
 }
 
 .testimonial-text {
@@ -379,7 +379,7 @@ footer p {
 
 .location {
     font-size: 0.9rem;
-    color: #777;
+    color: black;
     text-align: right;
 }
 
@@ -509,6 +509,10 @@ footer p {
     color: #777;
 }
 
+.map-placeholder p {
+    color: black;
+}
+
 .filter-section {
     padding: 0 40px 40px;
 }
@@ -569,7 +573,7 @@ footer p {
 }
 
 .reset-button {
-    background-color: #888;
+    background-color: black;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -582,7 +586,7 @@ footer p {
 }
 
 .reset-button:hover {
-    background-color: #666;
+    background-color: #302c2c;
     transform: translateY(-2px);
 }
 
@@ -685,15 +689,15 @@ footer p {
 }
 
 .difficulty-easy {
-    background-color: #4CAF50;
+    background-color: #094f0c;
 }
 
 .difficulty-moderate {
-    background-color: #FF9800;
+    background-color: #93631c;
 }
 
 .difficulty-difficult {
-    background-color: #F44336;
+    background-color: #931d15;
 }
 
 .no-results {

@@ -33,7 +33,7 @@
             <div class="hero-content">
                 <h1>Skip the boring trails — chase the ones with a view!</h1>
                 <p>EXPLORE BEAUTIFUL WATERFALLS</p>
-                <a href="hikes.html"><button class="learn-more">Explore Hikes</button></a>
+                <a href="hikes.html" class="learn-more">Explore Hikes</a>
             </div>
         </section>
 
@@ -80,8 +80,12 @@
             <p>Sign up for our newsletter to receive updates and helpful tips to make your next waterfall hike a success and forget the stress of not having a good vacation plan or appropriate hiking suggestions.</p>
             
             <form class="contact-form">
-                <input type="email" placeholder="Email address..." required>
-                <input type="text" placeholder="Full name..." required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email address..." required>
+            
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" placeholder="Full name..." required>
+            
                 <button type="submit" class="subscribe-button">Subscribe</button>
             </form>
         </section>

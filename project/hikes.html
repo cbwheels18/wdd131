@@ -79,7 +79,7 @@
                     <div class="filter-options">
                         <label class="filter-option">
                             <input type="checkbox" name="duration" value="short" class="filter-checkbox"> 
-                            <span class="checkbox-label">Short (< 2 hours)</span>
+                            <span class="checkbox-label">Short (&lt; 2 hours)</span>
                         </label>
                         <label class="filter-option">
                             <input type="checkbox" name="duration" value="medium" class="filter-checkbox"> 
@@ -87,7 +87,7 @@
                         </label>
                         <label class="filter-option">
                             <input type="checkbox" name="duration" value="long" class="filter-checkbox"> 
-                            <span class="checkbox-label">Long (> 4 hours)</span>
+                            <span class="checkbox-label">Long (&gt; 4 hours)</span>
                         </label>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
         <section class="hikes-results">
             <h2>Matching Hikes <span id="results-count">(Showing all hikes)</span></h2>
             <div id="hikes-container" class="hikes-container">
-                <!-- Hikes will be dynamically inserted here by JavaScript -->
+                
             </div>
         </section>
         
@@ -111,8 +111,12 @@
             <p>Sign up for our newsletter to receive updates and helpful tips to make your next waterfall hike a success.</p>
             
             <form class="contact-form">
-                <input type="email" placeholder="Email address..." required>
-                <input type="text" placeholder="Full name..." required>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email address..." required>
+            
+                <label for="fullname">Name</label>
+                <input type="text" id="fullname" placeholder="Full name..." required>
+            
                 <button type="submit" class="subscribe-button">Subscribe</button>
             </form>
         </section>
